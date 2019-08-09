@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EventScheduler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+ <%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" %>
+  <%= csrf_meta_tags %>
+
+  
+
+
+</head>
+<body>
+
+<!-- ********************navbar*************************************** -->
+<%= render "partials/navbar" %>
+<!-- ******************************Sign Up******************************* -->
+
+
+<%= render "partials/signup" %>
+
+
+<!-- /////////////////////////////////Login/////////////////////////////////////// -->
+<%= render "partials/login" %>
+
+
+
+
+
+
+
+
+
+  
+<div class="container">
+<% flash.each do |type,message| %>
+  <div class="alert alert-<%= type  %>"><%= message %></div>
+<% end %>
+
+</div>
+
+
+
+
+
+
+<%= yield %>
+ <div id="modal-place"> </div>
+<div class="footer">&copy; 2016 Event Scheduler</div>
+
+
+
+</body>
+</html>

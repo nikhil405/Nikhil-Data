@@ -1,0 +1,68 @@
+
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-md-offset-3 well">
+<h1 class="register"> Sign Up</h1>
+<%= form_for :user, url: user_create_path, :html => {:id => "signupform"} do |f| %>
+
+    <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+      
+        <%= pluralize(@user.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%=flash[:danger]= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+  <p>
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname, "class" => "form-control firstname", "required" => "true"%>
+  </p>
+ 
+  <p>
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname, "class" => "form-control lastname", "required" => "true" %>
+  </p>
+
+  <p>
+    <%= f.label :username %><br>
+    <%= f.text_field :username, "class" => "form-control username", "required" => "true" %>
+  </p>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.email_field :email,  "class" => "form-control email", "required" => "true"  %><p id="email-error"></p>
+  </p>
+  <p>
+    <%= f.label :phone %><br>
+    <%= f.telephone_field :phone, "class" => "form-control mobile", "required" => "true" %>
+  </p>
+  <p>
+    <%= f.label :password %><br>
+    <%= f.password_field :password, "class" => "form-control password", "required" => "true" %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation, "class" => "form-control password-confirm", "required" => "true" %>
+  </p>
+ <p>
+  <strong>Upload your profile image :</strong>
+    <%= f.file_field :attachment %><br>
+    <img id="blah" src="../../assets/avatar.jpg" width="100px" height="100px" alt="your image" />
+  </p>
+ 
+  <p>
+    <%= f.submit "Register User" %>
+  </p>
+<% end %>
+
+</div>
+</div>
+</div>

@@ -1,0 +1,11 @@
+.DS_Store
+
+# hide all in app/dist but not images folder
+app/dist/*
+!app/dist/images
+
+node_modules
+bower_components
+.tmp/
+**.mo
+.idea

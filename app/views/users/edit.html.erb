@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 well">
+      <%= form_for :user, url: update_user_path(@user), method: :patch do |f| %>
+  <p>
+    <%= f.label :FirstName %><br>
+    <%= f.text_field :firstname, "class" => "form-control", "required" => "true" %>
+  </p>
+ 
+  <p>
+    <%= f.label :LastName %><br>
+    <%= f.text_field :lastname, "class" => "form-control" , "required" => "true" %>
+  </p>
+
+<p>
+    <%= f.label :UserName %><br>
+    <%= f.text_field :username, "class" => "form-control" , "required" => "true" %>
+  </p>
+ <p>
+    <%= f.label :Email %><br>
+    <%= f.text_field :email, "class" => "form-control" , "required" => "true", "disabled"=>"true" %>
+  </p>
+
+  <p>
+  <strong>Select profile picture :</strong>
+    <%= f.file_field :attachment%>
+  </p>
+
+
+<p>
+  <%= f.submit "Update user" , "class" => "btn btn-primary " %>
+ 
+</p>
+<% end %>
+    </div>
+  </div>
+</div>
+
+

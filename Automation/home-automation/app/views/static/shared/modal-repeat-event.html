@@ -1,0 +1,167 @@
+<!-- Repeat Event Modal -->
+<div class="modal fade" id="modalRepeatEvent" tabindex="-1" role="dialog" aria-labelledby="repeatEventModal" aria-hidden="true">
+  <div class="modal-dialog modal-semi-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="repeatEventModal"><i class="fi fi-calender"></i> Repeat Event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row align-items-end justify-content-center mb-3">
+            <div class="col-6">
+              <div class="form-group text-center mb-0 ">
+                <label for="selectRepeatPattern">Repeat Pattern</label>
+                <select class="form-control" id="selectRepeatPattern">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-auto pl-0">
+              <button class="btn btn-info btn-rounded-circle"><i class="fi fi-plus"></i></button>
+            </div>
+          </div>
+
+          <div class="row align-items-end justify-content-center mb-3">
+            <div class="form-group col col-sm-6 text-center">
+              <label for="selectRepeatBasedOn">Based On</label>
+              <select class="form-control" id="selectRepeatBasedOn">
+                <option selected>Choose...</option>
+                <option value="1">Day</option>
+                <option value="2">Date</option>
+                <option value="3">Weekly</option>
+                <option value="4">Yearly</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="repeat-based-on-day mb-5">
+            <div class="form-check text-center mb-3">
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Weekdays
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Weekends
+              </label>
+            </div>
+
+            <div class="form-check text-center mb-3">
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Saturday
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Sunday
+              </label>
+            </div>
+
+            <div class="form-check text-center mb-4">
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> First Week
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Second Week
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Third Week
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Fourth Week
+              </label>
+            </div>
+
+            <div class="form-inline justify-content-center">
+              <label class="sr-only" for="inputDayRepeatStartDate">Start Date</label>
+              <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inputDayRepeatStartDate" placeholder="Start Date">
+
+              <label class="mr-2">To</label>
+
+              <label class="sr-only" for="inputDayRepeatEndDate">Username</label>
+              <input type="text" class="form-control" id="inputDayRepeatEndDate" placeholder="End Date">
+            </div>
+          </div> <!-- /.repeat-based-on-day -->
+
+          <hr/>
+
+          <div class="repeat-based-on-date mb-5">
+            <div class="row align-items-end justify-content-center mb-3">
+              <div class="form-group col col-sm-6 text-center">
+                <label for="inputSelectDate" class="sr-only">Select Date</label>
+                <input type="text" class="form-control" id="inputSelectDate" placeholder="Select Date">
+              </div>
+            </div>
+
+            <div class="form-inline justify-content-center">
+              <label class="sr-only" for="inputDateRepeatStartDate">Start Date</label>
+              <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inputDateRepeatStartDate" placeholder="Start Date">
+
+              <label class="mr-2">To</label>
+
+              <label class="sr-only" for="inputDateRepeatEndDate">Username</label>
+              <input type="text" class="form-control" id="inputDateRepeatEndDate" placeholder="End Date">
+            </div>
+          </div> <!-- /.repeat-based-on-date -->
+
+          <hr/>
+
+          <div class="repeat-based-on-weekly mb-5">
+            <div class="form-check text-center mb-4">
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Sun
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Mon
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Tue
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Wed
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Thu
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Fri
+              </label>
+              <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox" value=""> Sat
+              </label>
+            </div>
+
+            <div class="form-inline justify-content-center">
+              <label class="sr-only" for="inputWeeklyRepeatStartDate">Start Date</label>
+              <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inputWeeklyRepeatStartDate" placeholder="Start Date">
+
+              <label class="mr-2">To</label>
+
+              <label class="sr-only" for="inputWeeklyRepeatEndDate">Username</label>
+              <input type="text" class="form-control" id="inputWeeklyRepeatEndDate" placeholder="End Date">
+            </div>
+          </div> <!-- /.repeat-based-on-weekly -->
+
+          <hr/>
+
+          <div class="repeat-based-on-yearly mb-5">
+            <div class="form-inline justify-content-center">
+              <label class="sr-only" for="inputYearlyRepeatStartDate">Start Date</label>
+              <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inputYearlyRepeatStartDate" placeholder="Start Date">
+
+              <label class="mr-2">To</label>
+
+              <label class="sr-only" for="inputYearlyRepeatEndDate">Username</label>
+              <input type="text" class="form-control" id="inputYearlyRepeatEndDate" placeholder="End Date">
+            </div>
+          </div> <!-- /.repeat-based-on-yearly -->
+        </form>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-info">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,122 @@
+@font-face {
+	font-family: "fi";
+	src: url('../fonts/font-icons/fi.eot');
+	src: url('../fonts/font-icons/fi.eot?#iefix') format('eot'),
+		url('../fonts/font-icons/fi.woff2') format('woff2'),
+		url('../fonts/font-icons/fi.woff') format('woff'),
+		url('../fonts/font-icons/fi.ttf') format('truetype'),
+		url('../fonts/font-icons/fi.svg#fi') format('svg');
+}
+
+@mixin fi-styles {
+	font-family: "fi";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%fi {
+	@include fi-styles;
+}
+
+@function fi-char($filename) {
+	$char: "";
+
+	@if $filename == bell {
+		$char: "\E001";
+	}
+	@if $filename == bolt {
+		$char: "\E002";
+	}
+	@if $filename == calender {
+		$char: "\E003";
+	}
+	@if $filename == cloudy {
+		$char: "\E004";
+	}
+	@if $filename == devices {
+		$char: "\E005";
+	}
+	@if $filename == hamburger {
+		$char: "\E006";
+	}
+	@if $filename == logo {
+		$char: "\E007";
+	}
+	@if $filename == pencil {
+		$char: "\E008";
+	}
+	@if $filename == plus {
+		$char: "\E009";
+	}
+	@if $filename == temperature {
+		$char: "\E00A";
+	}
+	@if $filename == times {
+		$char: "\E00B";
+	}
+	@if $filename == union-denver {
+		$char: "\E00C";
+	}
+	@if $filename == users {
+		$char: "\E00D";
+	}
+
+	@return $char;
+}
+
+@mixin fi($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %fi;
+		} @else {
+			@include fi-styles;
+		}
+		content: fi-char($filename);
+	}
+}
+
+.fi-bell {
+	@include fi(bell);
+}
+.fi-bolt {
+	@include fi(bolt);
+}
+.fi-calender {
+	@include fi(calender);
+}
+.fi-cloudy {
+	@include fi(cloudy);
+}
+.fi-devices {
+	@include fi(devices);
+}
+.fi-hamburger {
+	@include fi(hamburger);
+}
+.fi-logo {
+	@include fi(logo);
+}
+.fi-pencil {
+	@include fi(pencil);
+}
+.fi-plus {
+	@include fi(plus);
+}
+.fi-temperature {
+	@include fi(temperature);
+}
+.fi-times {
+	@include fi(times);
+}
+.fi-union-denver {
+	@include fi(union-denver);
+}
+.fi-users {
+	@include fi(users);
+}

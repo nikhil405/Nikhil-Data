@@ -1,0 +1,26 @@
+<div class="container pt-4">
+  <h1>Testing</h1>
+  <div ng-controller="DemoController as ctrl">
+    <form ng-submit="ctrl.sayHello(ctrl.text)">
+      <input class="form-control" type="text" ng-model="ctrl.text">
+      <button class="btn btn-primary" type="submit">Say Hello</button>
+    </form>
+  </div>
+</div>
+<!--
+<div class="container">
+  <h1>Testing</h1>
+  <div ng-controller="YourController as ctrl">
+    <form ng-submit="ctrl.sayHelloGuys(ctrl.text)">
+      <input class="form-control" type="text" ng-model="ctrl.text">
+      <button class="btn btn-primary" type="submit">Say Hello</button>
+    </form>
+  </div>
+</div>-->
+<div class="container">
+  <h1>Testing</h1>
+  <div ng-controller="MainNavCommunityManager">
+  <div ng-repeat="menuItem in menuItems"></div>
+    {{ menuItem.name }}
+  </div>
+</div>

@@ -1,0 +1,31 @@
+/* ------------------------------ */
+// Customizing bootstrap Variables
+/* ------------------------------ */
+
+// fonts
+$font-family-primary: 'Source Sans Pro', sans-serif;
+
+// Customizing bootstrap Variables
+$brand-primary: #3A424E;
+$brand-info: #22DBED;
+$brand-success: #9EC930;
+
+$body-bg: $brand-primary;
+
+// Nav Bar
+$navBarHeight: 68px;
+$navbar-inverse-color: $brand-info;
+
+// card
+$card-deck-margin: 4px;
+
+  /* ------------------------------ */
+// Custom Variables
+/* ------------------------------ */
+// Get color names from here:
+// http://chir.ag/projects/name-that-color/
+
+$gold: #cdb068;
+$brand-primary-light: #667489;
+//$brand-primary-lighter: #some-value;
+$brand-primary-lightest: #E7E7E7;

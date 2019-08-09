@@ -1,0 +1,98 @@
+<div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal-signup" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><b>Sign Up</b></h4>
+        </div>
+        <div class="modal-body well">
+      
+<%= form_for :user, url: user_create_path, :html => {:id => "signupform"} do |f| %>
+
+
+<% if @user %>
+
+
+             <% if @user.errors.any? %>
+                <div id="error_explanation">
+                  <h2>
+
+                    <%= pluralize(@user.errors.count, "error") %> prohibited
+                    this article from being saved:
+                  </h2>
+                  <ul>
+                    <% @user.errors.full_messages.each do |msg| %>
+                      <li><% flash[:danger]= msg %></li>
+
+                     
+                    <% end %>
+                  </ul>
+                </div>
+              <% end %>
+               <% end %>
+
+
+            
+         
+
+  
+  <p>
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname, "class" => "form-control firstname", "required" => "true"%>
+  </p>
+ 
+  <p>
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname, "class" => "form-control lastname", "required" => "true" %>
+  </p>
+
+  <p>
+    <%= f.label :username %><br>
+    <%= f.text_field :username, "class" => "form-control username", "required" => "true" %>
+  </p>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.email_field :email,  "class" => "form-control email", "required" => "true"  %><p id="email-error"></p>
+  </p>
+  <p>
+    <%= f.label :phone %><br>
+    <%= f.telephone_field :phone, "class" => "form-control mobile", "required" => "true" %>
+  </p>
+  <p>
+    <%= f.label :password %><br>
+    <%= f.password_field :password, "class" => "form-control password", "required" => "true" %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation, "class" => "form-control password-confirm", "required" => "true" %>
+  </p>
+ 
+   <p>
+  <strong>Upload your profile image :</strong>
+    <%= f.file_field :attachment %><br>
+    <%= image_tag('avatar.jpg', size: "100x100", alt: "profile ing", "class" => "img-circle", :id => "blah")%>
+  </p>
+
+
+
+
+        </div>
+        <div class="modal-footer">
+       
+    <%= f.submit "Register User", "class"=>"btn btn-primary" %>
+ 
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <% end %>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>

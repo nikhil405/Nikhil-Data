@@ -1,0 +1,62 @@
+
+<div class="container">
+	<div class="row">
+		
+
+		<div class="col-md-6 col-md-offset-3 well jumbotron">
+<h1>User Details</h1>
+
+<div class="row">
+<div class="col-md-6 name">
+	<strong>Name : </strong>	
+	
+</div>
+<div class="col-md-6 value">
+	 <%= current_user.firstname.upcase %>&nbsp;
+	<%= current_user.lastname.upcase %>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 name">
+	<strong>Email : </strong>
+	
+</div>
+<div class="col-md-6 value">
+		 <%= current_user.email %><br>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-6 name">
+<strong>Use Name : </strong>
+	
+</div>
+<div class="col-md-6 value">
+<%= current_user.username %><br>
+</div>
+</div>
+
+	
+
+</div>
+
+
+
+
+	</div>
+</div>
+
+
+
+<div class="user-edit">
+	
+<%= link_to '<< BACK',list_events_path(current_user)%>
+|
+<%= link_to 'EDIT >>',edit_user_path%>
+</div>
+
+<div class="deleteAccount">
+	<%= link_to "Delete Account" , delete_user_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

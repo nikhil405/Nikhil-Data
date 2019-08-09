@@ -1,0 +1,46 @@
+.navbar-inverse {
+  .navbar-toggler {
+    border-color: $brand-primary;
+
+    &.dropdown-toggle:after {
+      margin: 0;
+      border: none;
+    }
+  }
+
+  .navbar-nav > li.dropdown-divider {
+    background-color: $navbar-inverse-toggler-border;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  left: auto;
+  right: -.5rem;
+  float: right;
+}
+
+.card-primary {
+  @include card-variant($brand-primary-light, $brand-primary);
+}
+
+// Modal
+.modal-content {
+  background-color: $brand-primary;
+}
+.modal-header {
+  color: $white;
+
+  .fi {
+    @include fontSize(32px);
+    @include lineHeight(32px)
+  }
+
+  .close {
+    color: $white;
+    text-shadow: none;
+  }
+}
+
+.modal-body {
+  background-color: $brand-primary-lightest;
+}

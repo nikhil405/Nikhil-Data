@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./dist/stylesheets/plugins.css"/>
+    <link rel="stylesheet" href="./dist/stylesheets/main.css"/>
+    <script src="./dist/javascripts/plugins.min.js"></script>
+  </head>
+  <body class="its-morning">
+    <div ng-include="'views/static/shared/main-nav.html'"></div>
+    <!--<div ng-include="'views/shared/demo-ajs-works.html'"></div>-->
+
+    <div class="container pt-4">
+      <div class="mb-5" ng-include="'views/static/shared/header-widgets.html'"></div>
+
+      <ul class="nav justify-content-center nav-main mb-4 hidden-md-down">
+        <li class="nav-item">
+          <a class="nav-link d-flex active" href="#">
+            <i class="fi fi-devices mr-2"></i> <span>EVENTS</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex" href="#">
+            <i class="fi fi-users mr-2"></i> <span>RESERVATIONS</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex" href="#">
+            <i class="fi fi-bolt mr-2"></i> <span>SERVICE</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="card-deck mb-4">
+        <div class="card card-inverse card-primary">
+          <h6 class="card-header bg-info text-center">UPCOMING EVENTS</h6>
+          <div class="card-block p-0">
+            <ul class="list-unstyled m-0 event-list">
+              <li class="px-3 py-2">
+                <div class="row">
+                  <div class="col-auto pl-3 text-center hidden-md-down">
+                    <div class="fs-10">SUNDAY</div>
+                    <div class="fs-36 lh-40 mb-1">21</div>
+                    <div class="fs-9">7:00pm - 11:00pm</div>
+                  </div>
+                  <div class="col-3 col-sm-auto pl-2 pr-0">
+                    <img class="rounded w-100" src="./dist/images/dummy-img-01.jpg" alt="dummy-img"/>
+                    <a href="#" class="btn btn-info btn-sm hidden-lg-up mt-1"><i class="fi fi-pencil"></i> EDIT</a>
+                  </div>
+                  <div class="col">
+                    <h6 class="mb-1">EVENT TITLE</h6>
+                    <p class="fs-12 mb-1 hidden-lg-up">Sunday 21, 7:00pm - 11:00pm</p>
+                    <p class="fs-11 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque eligendi eos, eum hic iure..</p>
+                    <a href="#" class="btn btn-info btn-sm hidden-md-down"><i class="fi fi-pencil"></i> EDIT</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="px-3 py-2">
+                <div class="row">
+                  <div class="col-auto pl-3 text-center hidden-md-down">
+                    <div class="fs-10">SUNDAY</div>
+                    <div class="fs-36 lh-40 mb-1">21</div>
+                    <div class="fs-9">7:00pm - 11:00pm</div>
+                  </div>
+                  <div class="col-3 col-sm-auto pl-2 pr-0">
+                    <img class="rounded w-100" src="./dist/images/dummy-img-01.jpg" alt="dummy-img"/>
+                    <a href="#" class="btn btn-info btn-sm hidden-lg-up mt-1"><i class="fi fi-pencil"></i> EDIT</a>
+                  </div>
+                  <div class="col">
+                    <h6 class="mb-1">EVENT TITLE</h6>
+                    <p class="fs-12 mb-1 hidden-lg-up">Sunday 21, 7:00pm - 11:00pm</p>
+                    <p class="fs-11 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque eligendi eos, eum hic iure..</p>
+                    <a href="#" class="btn btn-info btn-sm hidden-md-down"><i class="fi fi-pencil"></i> EDIT</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card card-inverse card-primary">
+          <h6 class="card-header bg-info text-center">SCHEDULE AN EVENT</h6>
+          <div class="card-block">
+            <div class="px-4">
+              <form>
+                <div class="form-group">
+                  <label for="inputTitle">Title</label>
+                  <input type="text" class="form-control" id="inputTitle">
+                </div>
+
+                <div class="form-group">
+                  <a href="#" class="btn btn-add-media p-0 d-block rounded text-center fs-11 text-white">Add Image</a>
+                </div>
+
+                <div class="form-group">
+                  <label for="selectTag">Choose a Tag</label>
+                  <select class="form-control" id="selectTag">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4 form-group">
+                    <label for="selectFromTime">From</label>
+                    <select class="form-control" id="selectFromTime">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 form-group">
+                    <label for="selectToTime">To</label>
+                    <select class="form-control" id="selectToTime">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 form-group">
+                    <label for="selectDate">On</label>
+                    <select class="form-control" id="selectDate">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-check text-center">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value=""> Repeat
+                  </label>
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalRepeatEvent"> Repeat Event (don't integrate this)</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputEventDesc">Event Description</label>
+                  <textarea class="form-control" name="" id="inputEventDesc" cols="30" rows="5"></textarea>
+                </div>
+
+              </form>
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-success btn-lg px-5">Create Event</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /.container -->
+
+    <div ng-include="'views/static/shared/modal-repeat-event.html'"></div>
+
+    <script src="./dist/javascripts/main.min.js"></script>
+    <script> automationApp.main(); </script>
+  </body>
+</html>

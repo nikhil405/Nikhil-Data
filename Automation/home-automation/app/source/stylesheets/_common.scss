@@ -1,0 +1,48 @@
+body {
+  padding-top: 56px;
+  background-repeat: no-repeat;
+  background-position: center 56px;
+  background-size: contain;
+
+  &.its-morning {
+    background-image: url("../images/img-backer-01.png");
+  }
+
+  &.its-night {
+    background-image: url("../images/img-backer-02.png");
+  }
+}
+
+// Font Icon
+.fi {
+  vertical-align: middle;
+}
+
+// Widgets
+.header-widget {
+  color: $white;
+  border-radius: .625rem;
+  text-shadow: 1px 1px 2px $black;
+  background-color: rgba($black, .2);
+
+  sup {
+    top: -1.25rem;
+    font-size: 30%;
+  }
+}
+
+// Event
+.event-list {
+  overflow: auto;
+  max-height: 700px;
+}
+
+.btn-add-media {
+  border: 2px dashed rgba($white, .2);
+  @include size(100px, 100px);
+  @include lineHeight(100px);
+
+  &:hover {
+    border-color: $white;
+  }
+}

@@ -1,0 +1,29 @@
+.of-h { overflow: hidden }
+.h-40px { height: 40px }
+
+// Line Height
+.lh-40     { @include lineHeight(40px) }
+.lh-normal { line-height: normal }
+
+// Font Size
+.fs-9  { @include fontSize(9px)  }
+.fs-11 { @include fontSize(11px) }
+.fs-12 { @include fontSize(12px) }
+.fs-14 { @include fontSize(14px) }
+.fs-36 { @include fontSize(36px) }
+.fs-40 { @include fontSize(40px) }
+
+// Text-color
+.text-gold { color: $gold }
+
+// button
+.btn-rounded-circle {
+  padding: 0;
+  border-radius: 50%;
+  @include size(40px, 40px)
+}
+
+// Modal
+.modal-semi-lg {
+  max-width: 650px;
+}
