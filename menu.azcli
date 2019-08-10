@@ -1,0 +1,5 @@
+#!/bin/bash
+az login
+az group create --name azurecli --location "Southindia"
+az storage account create -n azureclistorage -g azurecli -l Southindia --sku Standard_GRS
+az resource tag --tags Dept=IT Environment=Test -g azurecli -n azureclistorage --resource-type "Microsoft.Storage/storageAccounts"

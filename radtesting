@@ -1,0 +1,110 @@
+
+* OS checking 
+            For centos : cat /etc/os-release
+
+
+     For Ubuntu : lsb_release -a
+     Other Option : hostnamectl
+     Type the following command to find Linux kernel version: uname -r
+     Bash Source Update commands : source ~/.bashsrc
+     Ruby Version : ruby -v 
+     Rails Version : rails -v or --version
+     Postgres Version : postgres -V
+       
+
+
+
+
+
+Staging Envirnoment
+
+ssh deploy@qa-rad-api.qwinix.io
+
+migrate db
+rake db:migrate db:seed
+
+	console watching current path
+ RAILS_ENV=staging bundle exec rails c
+
+
+Running puma
+bundle exec puma -C /u01/apps/qwinix/qa_rad_roller/shared/puma.rb –daemon RAILS_ENV=staging
+
+
+rake start
+bundle exec rake db:seed RAILS_ENV=staging
+
+
+server running and kill the running server
+ps -ef | grep puma
+kill -9 29199
+
+
+
+check the log 
+tail -f staging.log
+
+
+
+
+login to server using ssh key
+ssh deploy@qa-rad-api.qwinix.io
+
+
+
+
+bundle exec puma -C /u01/apps/qwinix/prod_rad_roller/shared/puma.rb –daemon RAILS_ENV=production
+
+login it console
+
+ssh deploy@it-rad-api.qwinix.io
+
+
+if in case the sever is down 
+
+we want start puma and nginx
+
+sudo service nginx restart
+
+bundle exec puma -C /u01/apps/qwinix/prod_rad_roller/shared/puma.rb RAILS_ENV=production --daemon
+
+
+
+
+database update commands
+
+6  RAILS_ENV=staging bundle exec rails c
+UserExercise.destroy_all
+Exercise.destroy_all   184
+UserPlaylist.destroy_all
+Playlist.destroy_all  50
+
+  RAILS_ENV=it bundle exec rake import:usages
+  RAILS_ENV=it bundle exec rake import_record:usages_record
+
+  RAILS_ENV=it bundle exec rake import:playlists
+  863  RAILS_ENV=it bundle exec rake import_playlist:playlist_record
+  864  RAILS_ENV=it bundle exec rake import_playlist2:playlist_record2
+
+after cross verification 
+
+Exercise.count : 184
+Playlist.count :50
+
+
+
+
+
+
+
+
+
+
+
+Ican9It 
+
+Ip :ssh deploy@100.26.251.113
+log : tail -f it.log
+Nginx restart: sudo service nginx restart
+db-migrate : RAILS_ENV=it bundle exec bundle exec rake db:migrate
+Puma Restart: RAILS_ENV=it bundle exec puma -C /u01/apps/qwinix/ican_it/shared/puma.rb –daemon

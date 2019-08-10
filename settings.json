@@ -1,0 +1,479 @@
+{
+  "settings": [
+    {
+      "id": "FE15D9368B0C160A6060DBDFA3116AC8B236D507AD8B76F645993C142AAB44E6",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "General",
+      "settingKey": "fxs-theme",
+      "data": {
+        "colorCode": "#0078d4",
+        "imageUri": "https://portal.azure.com/Content/5.0.302.800163861.181112-2023/Images/MsPortalImpl/Themes/Theme_Azure.png",
+        "name": "azure",
+        "title": "Azure",
+        "mode": 0
+      },
+      "_rid": "DnIFAOpieQDIVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDIVPcBAACAAQ==/",
+      "_etag": "\"0d00ffaf-0000-0000-0000-5bf261c20000\"",
+      "_attachments": "attachments/",
+      "_ts": 1542611394
+    },
+    {
+      "id": "0AE05C666B29842CD1765E54832AF74F59FB162CF4FEC41EC0A9C83846C2432C",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "Startboard",
+      "settingKey": "Startboard",
+      "data": {
+        "id": "Startboard",
+        "locator": null,
+        "widgetState": {
+          "NormalState": {
+            "layoutSettings": {
+              "positions": []
+            }
+          }
+        },
+        "childSettings": {},
+        "dashboardId": "private/96c88fd1-9df1-4ae2-893b-019abf07f00f",
+        "dashboardTitle": "Dashboard",
+        "dashboardModel": {
+          "model": {
+            "timeRange": {
+              "relative": {
+                "duration": 24,
+                "timeUnit": 1
+              }
+            }
+          },
+          "metadata": {
+            "timeRange": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+          }
+        }
+      },
+      "_rid": "DnIFAOpieQDJVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDJVPcBAACAAQ==/",
+      "_etag": "\"00004668-0000-0000-0000-5bd2e96d0000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548973
+    },
+    {
+      "id": "6EFFC0F96357DF90F6AA33EE737AE43C3E1E923302144EE6D82D051D2A1E5150",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "store": "CrossTenant",
+      "settingKey": "userDefaultDirectory",
+      "data": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "_rid": "DnIFAOpieQDKVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDKVPcBAACAAQ==/",
+      "_etag": "\"0000545d-0000-0000-0000-5bd2e8020000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548610
+    },
+    {
+      "id": "0E50C8F1D64D0B9B90468833AAE1E5D9BF726E3D93E47EE77EBEFDF029DB80B2",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "Startboard",
+      "settingKey": "sprint2",
+      "data": {
+        "startBoardId": "Startboard"
+      },
+      "_rid": "DnIFAOpieQDLVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDLVPcBAACAAQ==/",
+      "_etag": "\"00005b5d-0000-0000-0000-5bd2e8030000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548611
+    },
+    {
+      "id": "A1B36C94D4377B01B97CA19FC9FC8AAF6819895640EC0CC747F8BA688C5A46AB",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "Favorites",
+      "settingKey": "favorites",
+      "data": "[\"HubsExtension_Dashboard\",\"HubsExtension_BrowseAllResources\",\"HubsExtension_ResourceGroups\",\"WebsitesExtension_Website\",\"WebsitesExtension_AppService\",\"SqlAzureExtension_Database\",\"Microsoft_Azure_DocumentDB_DocumentDBDatabaseAccount\",\"Microsoft_Azure_Compute_VirtualMachine\",\"Microsoft_Azure_Network_LoadBalancer\",\"Microsoft_Azure_Storage_StorageAccount\",\"Microsoft_Azure_Network_VirtualNetwork\",\"Microsoft_AAD_IAM_AzureActiveDirectory\",\"Microsoft_Azure_Monitoring_AzureMonitoring\",\"Microsoft_Azure_Expert_AzureAdvisor\",\"Microsoft_Azure_Security_SecurityDashboard\",\"Microsoft_Azure_Billing_Billing\",\"Microsoft_Azure_Support_HelpAndSupport\"]",
+      "_rid": "DnIFAOpieQDMVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDMVPcBAACAAQ==/",
+      "_etag": "\"00005d5d-0000-0000-0000-5bd2e8030000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548611
+    },
+    {
+      "id": "B79415DFC201E1F027D28E37FA73EFF5C49C218C16E20B0CB82394D6A91F00F2",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "store": "FirstVisited",
+      "settingKey": "FirstVisitedTimestamp",
+      "data": 1540548610393,
+      "_rid": "DnIFAOpieQDNVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDNVPcBAACAAQ==/",
+      "_etag": "\"00005e5d-0000-0000-0000-5bd2e8030000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548611
+    },
+    {
+      "id": "1CD95DD1083D7894A620B20F7A5449EAA59FB3A4EF4087383BE701C1817A40C9",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "HubsExtension",
+      "settingKey": "subscriptions_selected",
+      "data": "40478ac8-e8b9-4d73-bf17-415e86372279",
+      "_rid": "DnIFAOpieQDOVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDOVPcBAACAAQ==/",
+      "_etag": "\"0000645d-0000-0000-0000-5bd2e8040000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548612
+    },
+    {
+      "id": "44A03DC17C783B91C528B017510FDE560B1C1B870D905AFACDE433E65F1612F6",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "DashboardInventory",
+      "settingKey": "private/96c88fd1-9df1-4ae2-893b-019abf07f00f",
+      "data": {
+        "storeName": "Dashboard0",
+        "id": "private/96c88fd1-9df1-4ae2-893b-019abf07f00f",
+        "title": "Dashboard"
+      },
+      "_rid": "DnIFAOpieQDPVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDPVPcBAACAAQ==/",
+      "_etag": "\"0000665d-0000-0000-0000-5bd2e8040000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548612
+    },
+    {
+      "id": "114A0F00ADE959C991FAA80133E1C4A578A31607D4685D204A70B9AA2B93F38D",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "Dashboard0",
+      "settingKey": "private/96c88fd1-9df1-4ae2-893b-019abf07f00f",
+      "data": {
+        "id": "private/96c88fd1-9df1-4ae2-893b-019abf07f00f",
+        "title": "Dashboard",
+        "settings": {
+          "Startboard": {
+            "id": "Startboard",
+            "locator": null,
+            "widgetState": {
+              "NormalState": {
+                "layoutSettings": {
+                  "positions": []
+                }
+              }
+            },
+            "childSettings": {},
+            "dashboardId": "private/96c88fd1-9df1-4ae2-893b-019abf07f00f",
+            "dashboardTitle": "Dashboard",
+            "dashboardModel": {
+              "model": {
+                "timeRange": {
+                  "relative": {
+                    "duration": 24,
+                    "timeUnit": 1
+                  }
+                }
+              },
+              "metadata": {
+                "timeRange": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+              }
+            }
+          }
+        }
+      },
+      "_rid": "DnIFAOpieQDQVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDQVPcBAACAAQ==/",
+      "_etag": "\"00004868-0000-0000-0000-5bd2e96d0000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548973
+    },
+    {
+      "id": "13441B1853D537544087820D473F49093CBD87B65C2CB957C3A83513C6008E1D",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "store": "CrossTenant",
+      "settingKey": "WelcomeSequence",
+      "data": {
+        "viewed": 1540548613559,
+        "action": 2
+      },
+      "_rid": "DnIFAOpieQDSVPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDSVPcBAACAAQ==/",
+      "_etag": "\"0000895d-0000-0000-0000-5bd2e80a0000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548618
+    },
+    {
+      "id": "56D233C787BAFD0ACD835E3F4F4CD2B4570B89067DC0F3BB73C5D9C8939DFFFA",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "Favorites",
+      "settingKey": "version",
+      "data": 3,
+      "_rid": "DnIFAOpieQD5VPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQD5VPcBAACAAQ==/",
+      "_etag": "\"0000bf62-0000-0000-0000-5bd2e8b60000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548790
+    },
+    {
+      "id": "CF53E6FDA92D4E1795772BB5BC3E5CC63EF9F4E2D2B63059F8C80BB4F85B899F",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "store": "StartupNotifications",
+      "settingKey": "AdvisorNotification",
+      "data": 1540548790911,
+      "_rid": "DnIFAOpieQD7VPcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQD7VPcBAACAAQ==/",
+      "_etag": "\"0000ef62-0000-0000-0000-5bd2e8bd0000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540548797
+    },
+    {
+      "id": "D9CC0A96B6B57E868CE11DC6BAFC993F5CE7194E7FE6D98118922B2095E2A1F0",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "HubsExtension",
+      "settingKey": "whatsNew_lastNotificationTimestamp",
+      "data": "2018-11-05T11:25:00.974Z",
+      "_rid": "DnIFAOpieQAJVfcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQAJVfcBAACAAQ==/",
+      "_etag": "\"1f00fd48-0000-0000-0000-5be028920000\"",
+      "_attachments": "attachments/",
+      "_ts": 1541417106
+    },
+    {
+      "id": "8C75AB9EB8CD68C13EFD9623CE207DE7BD1242F3CD5C2F27FD8B014AE3EEEC8D",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "General",
+      "settingKey": "highContrastKey",
+      "data": 0,
+      "_rid": "DnIFAOpieQDHWfcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDHWfcBAACAAQ==/",
+      "_etag": "\"000022e7-0000-0000-0000-5bd2fa0b0000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540553227
+    },
+    {
+      "id": "716F4FB328A1273E64366FD6AA114549D01A7DDE8FC34BD81461AB344A7D2556",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "HubsExtension",
+      "settingKey": "gallery_create_lastDeployed_galleryItems",
+      "data": {
+        "Microsoft.StorageAccount-ARM": 1541395164001,
+        "Microsoft.ContainerRegistry": 1542612167752,
+        "microsoft.containerinstances": 1541482118759,
+        "Microsoft.ResourceGroup.1.0.1": 1542612064950,
+        "Microsoft.AppSvcLinux.2.0.2": 1542613525133
+      },
+      "_rid": "DnIFAOpieQC9yfcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQC9yfcBAACAAQ==/",
+      "_etag": "\"0e00660c-0000-0000-0000-5bf26a1e0000\"",
+      "_attachments": "attachments/",
+      "_ts": 1542613534
+    },
+    {
+      "id": "58F98DE28B5C55A75FA18A8AF8628AD4B06C536DDE9F007282BCD4687665E7C6",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "HubsExtension",
+      "settingKey": "gallery_createLauncher_lastUsed_resourceGroupLocation",
+      "data": "centralus",
+      "_rid": "DnIFAOpieQC+yfcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQC+yfcBAACAAQ==/",
+      "_etag": "\"0e006a0c-0000-0000-0000-5bf26a1e0000\"",
+      "_attachments": "attachments/",
+      "_ts": 1542613534
+    },
+    {
+      "id": "EB0B29FC4302D36336E27526093D9FDD5A2072BE0D8E34B200F29675805444BE",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "HubsExtension",
+      "settingKey": "deployments_lastUsed_locations",
+      "data": {
+        "southindia": 1541395164002,
+        "eastus": 1542612167752,
+        "westus": 1541395890008,
+        "centralus": 1542613525134
+      },
+      "_rid": "DnIFAOpieQC-yfcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQC-yfcBAACAAQ==/",
+      "_etag": "\"0e00770c-0000-0000-0000-5bf26a200000\"",
+      "_attachments": "attachments/",
+      "_ts": 1542613536
+    },
+    {
+      "id": "147EFFB2501A2F8DC339A6E75ABC9529A8AB4DB0A1BBE12260E5E4D3E8A36961",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "HubsExtension",
+      "settingKey": "gallery_createLauncher_lastUsed_subscriptionId",
+      "data": "40478ac8-e8b9-4d73-bf17-415e86372279",
+      "_rid": "DnIFAOpieQDAyfcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDAyfcBAACAAQ==/",
+      "_etag": "\"0f00c5db-0000-0000-0000-5bd69b1b0000\"",
+      "_attachments": "attachments/",
+      "_ts": 1540791067
+    },
+    {
+      "id": "4DDF559FC8DB288AD7E0FF36DDE596548997EA4124B375B2E56B5A5A38C0D095",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "HubsExtension",
+      "settingKey": "browse_recentResources",
+      "data": {
+        "version": 1,
+        "data": [
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/cloud-shell-storage-centralindia/providers/Microsoft.Storage/storageAccounts/csg40478ac8e8b9x4d73xbf1",
+            "timeStamp": 1541998437050
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279",
+            "timeStamp": 1541584576222
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/QwinixInstance/providers/Microsoft.ClassicStorage/storageAccounts/qwinixinstance9970",
+            "timeStamp": 1541999785316
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/democliresource",
+            "timeStamp": 1541999820344
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/democliresource/providers/Microsoft.Storage/storageAccounts/democlistorageaccount",
+            "timeStamp": 1542684129474
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/radresource",
+            "timeStamp": 1541998456112
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/radresource/providers/Microsoft.Storage/storageAccounts/radaccount",
+            "timeStamp": 1541998459018
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/cloud-shell-storage-centralindia",
+            "timeStamp": 1541998430130
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/QwinixInstance",
+            "timeStamp": 1541998564955
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/cliresource",
+            "timeStamp": 1542006751664
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/cliresource/providers/Microsoft.Storage/storageAccounts/clistaccount",
+            "timeStamp": 1542015613352
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/cliresource1",
+            "timeStamp": 1542016552815
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/cliresource1/providers/Microsoft.Storage/storageAccounts/clistaccount1",
+            "timeStamp": 1542024336373
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/demoresource",
+            "timeStamp": 1542078608188
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/demoresource/providers/Microsoft.Storage/storageAccounts/demostaccount",
+            "timeStamp": 1542251589937
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/azure-docker-blog/providers/Microsoft.ContainerRegistry/registries/azuredockerblogregistry10",
+            "timeStamp": 1542612485300
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/azure-docker-blog/providers/Microsoft.Web/serverFarms/ServicePlan0e3e2195-8441",
+            "timeStamp": 1542627540469
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/azure-docker-blog/providers/Microsoft.Web/sites/azure-docker-blog-app",
+            "timeStamp": 1542614930287
+          },
+          {
+            "resourceId": "/subscriptions/40478ac8-e8b9-4d73-bf17-415e86372279/resourceGroups/azure-docker-blog",
+            "timeStamp": 1542620097750
+          }
+        ]
+      },
+      "_rid": "DnIFAOpieQDyyfcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQDyyfcBAACAAQ==/",
+      "_etag": "\"1900363c-0000-0000-0000-5bf37df10000\"",
+      "_attachments": "attachments/",
+      "_ts": 1542684145
+    },
+    {
+      "id": "7EEBD63D177FA495D371E27413EF4695D40514BF03D5ECC042522C4DB4EC29AD",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "HubsExtension",
+      "settingKey": "recommendations_lastFetchTimestamp",
+      "data": {
+        "40478ac8-e8b9-4d73-bf17-415e86372279": "2018-11-19T07:32:27.419Z"
+      },
+      "_rid": "DnIFAOpieQBhyvcBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQBhyvcBAACAAQ==/",
+      "_etag": "\"0d001afa-0000-0000-0000-5bf268790000\"",
+      "_attachments": "attachments/",
+      "_ts": 1542613113
+    },
+    {
+      "id": "215BABFBB183C397476E51786F19EF0F29BFA5159FF01C1D7C5C83DB3A28AEAB",
+      "partitionKey": "0003BFFD1857D65C",
+      "environment": "default",
+      "tenant": "0db41e42-3a92-45d0-884e-c71e604b940f",
+      "store": "Part",
+      "settingKey": "[PartIdentityState]-[0]Microsoft_Azure_ActivityLog-[1]ExportAuditLogsBlade-[2]TemplateBladeVirtualLens-[5]ExportAuditLogsBlade",
+      "data": {
+        "v": {
+          "content": {
+            "v": {
+              "subscriptionInfoQuerySetting": {
+                "v": {
+                  "subscriptionDisplayName": {
+                    "v": "Free Trial"
+                  },
+                  "subscriptionId": {
+                    "v": "40478ac8-e8b9-4d73-bf17-415e86372279"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "#fxSerialized#": true
+      },
+      "ttl": 7776000,
+      "_rid": "DnIFAOpieQACGfkBAACAAQ==",
+      "_self": "dbs/DnIFAA==/colls/DnIFAOpieQA=/docs/DnIFAOpieQACGfkBAACAAQ==/",
+      "_etag": "\"0a00775b-0000-0000-0000-5bdc0a040000\"",
+      "_attachments": "attachments/",
+      "_ts": 1541147140
+    }
+  ]
+}

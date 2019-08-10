@@ -1,0 +1,9 @@
+az login
+az account set --subscription fbf16f33-6e29-45a9-b3ea-947c0317746e
+az group create --name testscli2 --location westus2
+az storage account create --name testoire --location westus2 --resource-group testscli2 --sku Standard_RAGRS --https-only true --kind StorageV2 --access-tier Hot
+az storage blob service-properties update --account-name testoire --static-website --404-document index.html --index-document index.html
+az storage account show -n testoire -g testscli2 --query "primaryEndpoints.web" --output tsv# az storage blob upload-batch -s /Users/harsha/Desktop/Archive --destination $web --account-name testoir
+az storage container create -n 'test22' --account-name testoire --public-access container
+az storage account keys list --account-name testoire --resource-group testscli2 --output tableexport AZURE_STORAGE_ACCESS_KEY="key2"
+az storage blob upload-batch -d 'test22' --account-name testoire -s /Users/harsha/Desktop/Archive
